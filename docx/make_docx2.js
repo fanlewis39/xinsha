@@ -296,10 +296,6 @@ http.createServer(function (request, response) {
         })
       }
       for( var i=0;i<childNodes.length;i++ ){
-        // if(childNodes[i].childNodes.length == 1 && childNodes[i].textContent.indexOf("   ") != 0 )
-        // if( childNodes[i].tagName == 'table' ) {
-        //   console.log("true")
-        // }
         var grandChildNodes = childNodes[i].childNodes
         for( var j=0;j<grandChildNodes.length;j++ ){
           if( grandChildNodes[j].tagName == 'img' ){
@@ -392,7 +388,6 @@ http.createServer(function (request, response) {
         }
       }
     }
-    // 调试：http://localhost:4005/?projectId=11e9-179e-d90bc6b5-96ef-1f01e45bff4e&start=2018-07-26%2000:00:00&end=2018-08-25%2023:59:59
 
     var tableStyle = {
       tableColWidth: 6000,
