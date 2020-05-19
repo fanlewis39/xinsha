@@ -1,0 +1,25 @@
+<service>
+	<id>weekreport_docx.exe</id>
+	<name>weekreport_docx</name>
+	<description>周报文档下载</description>
+	<executable>C:\Program Files\nodejs\node.exe</executable>
+	<logmode>rotate</logmode>
+	<argument>--harmony</argument>
+	<argument>C:\cnqisoft\bin\apache-tomcat-7.0.57\webapps\Z0162S\portal\H5\officegen\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\cnqisoft\bin\apache-tomcat-7.0.57\webapps\Z0162S\portal\H5\officegen\docx_weekreport\make_docx.js</argument>
+	<argument>--log</argument>
+	<argument>weekreport_docx wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>40</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<stoptimeout>30sec</stoptimeout>
+	<workingdirectory>C:\cnqisoft\bin\apache-tomcat-7.0.57\webapps\Z0162S\portal\H5\officegen\docx_weekreport</workingdirectory>
+</service>
